@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/boostrap/bootstrap.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid  ">
+        <div class="row    border-black">
+            <div class="col-md-6 ">
+                <div class="form-control mt-3 rounded-0 " style="background-color: darkkhaki;">
+                    <h4 style="text-align: center;">Resume</h4>
+                    <hr>
+                    <label for="name" class="form-label">Name</label>
+                    <div class="row mb-2" >
+                        <div class="col">
+                            <input type="text" id="first" class="form-control" placeholder="First">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="last" class="form-control" placeholder="Last">
+                        </div>
+                    </div>
+                    <!--row 2-->
+                    <div class="row mb-2" >
+                        <div class="col">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" id="address" class="form-control">
+                        </div>
+                        
+                    </div>
+                    <!--row 3-->
+                    <div class="row mb-2" >
+                        <div class="col">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="text" id="mobile" class="form-control" >
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">E-Mail</label>
+                            <input type="text" id="email" class="form-control" >
+                        </div>
+                    </div>
+                    <!--row 4-->
+                    <label for="name" class="form-label">Personal Profile</label>
+                    <div class="row mb-2" >
+                        <div class="col">
+                            <input type="text" id="father" class="form-control" placeholder="Father's Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="mother" class="form-control" placeholder="Mother's Name">
+                        </div>
+                    </div>
+                     <!--row 4-->
+                    <label for="dob" class="form-label">Date Of Birth</label>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="date" class="form-control" id="dob">
+                        </div>
+
+                    </div>
+                    <!--row 5-->
+                    <label for="skill" class="form-label" >Skills</label>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" id="skills">
+                        </div>
+
+                    </div>
+                    <!--row 5-->
+                    <label for="education" class="form-label">Education</label>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" id="education">
+                        </div>
+
+                    </div>
+                    <!--row 5-->
+                    <label for="experience" class="form-label" >Experience</label>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" id="experincer">
+                        </div><br>
+                       
+                    </div>
+                    
+
+                </div>
+                <button type="sumbit" onclick="resume()" class="btn btn-primary btn btn-primary    col-3 offset-4 mt-3 mb-2     ">Preview</button>
+            </div>
+            
+
+            
+            <div class="col-md-6  " id="printArea">
+               <div class="form-control mb-0 rounded-0" style="background-color:burlywood;">
+                <h4 style="text-align: center;">Preview</h4>
+                <hr>
+                
+                  <b> Name : </b> <span id="o_name"> </span><br><br>
+                  <b> Address : </b> <span id="o_address"> </span><br><br>
+                  <b> Mobile: </b> <span id="o_mobile"> </span><br><br>
+                  <b> E-mail: </b> <span id="o_email"> </span>
+                
+                <hr>
+                <p class="bg-success-subtle p-1" style=" font-weight: bold;text-align: center;">Personal Profile </p>
+                   <b>Father's Name :</b>  <span class="ms-3" id="o_father"></span><br><br>
+                   <b>Mother's Name :</b>  <span class="ms-3" id="o_mother"></span><br><br>
+                    <b>DOB : </b><span class="ms-3" id="o_dob"></span><br><br>
+                
+                <p class="bg-success-subtle p-1" style=" font-weight: bold; text-align: center;">Skills</p> <li class="ms-3" id="o_skills"></li>
+                <p class="bg-success-subtle p-1" style=" font-weight: bold;text-align: center;">Education <li class="ms-3" id="o_education"></li></p>
+                <p class="bg-success-subtle p-1" style=" font-weight: bold;text-align: center;">Work Experience <li class="ms-3" id="o_experincer"></li></p>
+                
+                
+               </div>
+               <button type="sumbit" onclick="print()" class="btn btn-primary   col-2 offset-5 me-5 mt-2  mb-2 ">Print</button>
+            </div>
+           
+        </div>
+
+       
+    </div>
+    <script src="/resume/script.js"></script>
+</body>
+</html>
