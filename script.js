@@ -1,5 +1,5 @@
     
 function resume(){
-    let first=document.getElementById('first').value;
-    alert(first);
+    //let first=document.getElementById('first').value;
+    alert('12345');
 }
