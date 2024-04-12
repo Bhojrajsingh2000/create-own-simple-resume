@@ -1,3 +1,5 @@
+    
+function resume(){
     let first=document.getElementById('first').value;
     let last=document.getElementById('last').value;
     let address=document.getElementById('address').value;
@@ -9,7 +11,6 @@
     let skills=document.getElementById('skills').value;   
     let education=document.getElementById('education').value;
     let experincer=document.getElementById('experincer').value;
-function resume(){
 
     document.getElementById('o_name').innerText=" "+first + " "+last;
     document.getElementById('o_address').innerText=" "+address;
