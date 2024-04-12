@@ -1,16 +1,15 @@
-
+    let first=document.getElementById('first').value;
+    let last=document.getElementById('last').value;
+    let address=document.getElementById('address').value;
+    let mobile=document.getElementById('mobile').value;
+    let email=document.getElementById('email').value;
+    let father=document.getElementById('father').value;
+    let mother=document.getElementById('mother').value;
+    let dob=document.getElementById('dob').value;
+    let skills=document.getElementById('skills').value;   
+    let education=document.getElementById('education').value;
+    let experincer=document.getElementById('experincer').value;
 function resume(){
-    var first=document.getElementById('first').value;
-    var last=document.getElementById('last').value;
-    var address=document.getElementById('address').value;
-    var mobile=document.getElementById('mobile').value;
-    var email=document.getElementById('email').value;
-    var father=document.getElementById('father').value;
-    var mother=document.getElementById('mother').value;
-    var dob=document.getElementById('dob').value;
-    var skills=document.getElementById('skills').value;   
-    var education=document.getElementById('education').value;
-    var experincer=document.getElementById('experincer').value;
 
     document.getElementById('o_name').innerText=" "+first + " "+last;
     document.getElementById('o_address').innerText=" "+address;
@@ -24,8 +23,8 @@ function resume(){
     document.getElementById('o_experincer').innerText=" "+experincer;
 }
 function print() {
-    var divContents = document.getElementById("printArea").innerHTML; 
-    var a = window.open('', '', 'height=1000, width=500'); 
+    let divContents = document.getElementById("printArea").innerHTML; 
+    let a = window.open('', '', 'height=1000, width=500'); 
     a.document.write(divContents);
     a.document.write('<link rel="stylesheet" href="/bootstrap.css" >') 
     a.print();
